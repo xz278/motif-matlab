@@ -238,7 +238,7 @@ numOverAllMotif = length(overAllMotifs);
 endIdx = find(overAllCumPercentage>0.9,1);
 for i=1:endIdx
 	[~,nx,ny] = drawMotif(x,y,overAllMotifs{i});
-	text((x+nx)/2,ny-4,num2str(i),'HorizontalAlignment','center','FontSize',8)
+	text((x+nx)/2,ny-4,num2str(i),'HorizontalAlignment','center','FontSize',8);
 	x = nx;
 	y = ny;
 	[~,x2,y2] = drawRect(x2,y2,overAllPercentage(i));
